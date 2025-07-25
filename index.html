@@ -41,15 +41,15 @@
     }
 
     .hero {
-      background: url('https://via.placeholder.com/1920x800/eeeeee/000000?text=TollywoodAI+Header+Banner') no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+  overflow: hidden;
+}
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
@@ -158,8 +158,12 @@
   </nav>
 </header>
 
-<div class="hero" style="background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1583912268183-bb47f447cdc0?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+<div class="hero">
+  <video autoplay muted loop playsinline style="position:absolute; width:100%; height:100%; object-fit:cover; z-index:-1;">
+    <source src="https://cdn.coverr.co/videos/coverr-director-on-set-1750/1080p.mp4" type="video/mp4">
+  </video>
   <h1>🎬 TollywoodAI: Future of Telugu Cinema</h1>
+  <button id="toggleMute" style="position:absolute; bottom:20px; right:20px; padding:10px 15px; background:#fff; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">🔇 Unmute</button>
 </div>
 
 <div class="ads-inline">
@@ -255,5 +259,13 @@
 <div class="footer" id="contact" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-blend-mode: lighten;">
   © 2025 TollywoodAI · Created with ❤️ using GPT-4 · <a href="mailto:contact@tollywoodai.com">Contact Us</a>
 </div>
+<script>
+  const btn = document.getElementById('toggleMute');
+  const video = document.querySelector('.hero video');
+  btn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    btn.textContent = video.muted ? '🔇 Unmute' : '🔊 Mute';
+  });
+</script>
 </body>
 </html>
