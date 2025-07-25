@@ -8,12 +8,12 @@
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      color: #fff;
-      background-color: #0d0d0d;
+      color: #e0e0e0;
+      background-color: #121212;
     }
 
     header {
-      background-color: #111;
+      background-color: #1c1c1c;
       padding: 20px;
       display: flex;
       justify-content: space-between;
@@ -21,10 +21,11 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
     }
 
     nav a {
-      color: #ff3366;
+      color: #ff4081;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
@@ -48,19 +49,21 @@
 
     .hero h1 {
       font-size: 3.5rem;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
+      border-radius: 10px;
     }
 
     .section {
       padding: 60px 20px;
       text-align: center;
-      background-color: #111;
+      background-color: #1a1a1a;
     }
 
     .section h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
+      color: #ff4081;
     }
 
     .poster-grid {
@@ -75,6 +78,7 @@
       border-radius: 10px;
       transition: transform 0.3s ease;
       cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
 
     .poster:hover {
@@ -90,26 +94,31 @@
     }
 
     .feature {
-      background-color: #222;
+      background-color: #2a2a2a;
       padding: 30px;
       border-radius: 12px;
       width: 300px;
       animation: fadeIn 1s ease-in;
+      color: #fff;
     }
 
     .feature h3 {
-      color: #ff3366;
+      color: #64ffda;
       margin-bottom: 10px;
     }
 
-    .ads-section {
+    .ads-section, .ads-inline {
       margin: 50px auto;
       max-width: 800px;
-      background: #1a1a1a;
+      background: #1f1f1f;
       padding: 30px;
       text-align: center;
       border-radius: 12px;
       box-shadow: 0 0 10px #000;
+    }
+
+    .ads-inline {
+      margin: 30px auto;
     }
 
     .footer {
@@ -117,11 +126,11 @@
       text-align: center;
       font-size: 0.9rem;
       background-color: #000;
-      color: #999;
+      color: #888;
     }
 
     a {
-      color: #ff3366;
+      color: #64ffda;
       text-decoration: none;
     }
   </style>
@@ -129,7 +138,7 @@
 <body>
 
   <header>
-    <h2>TollywoodAI</h2>
+    <h2 style="color: #ff4081;">TollywoodAI</h2>
     <nav>
       <a href="#movies">Movies</a>
       <a href="#ads">TV Ads</a>
@@ -142,6 +151,19 @@
     <h1>🎬 TollywoodAI: Future of Telugu Cinema</h1>
   </div>
 
+  <div class="ads-inline">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1111111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <div class="section" id="movies">
     <h2>🌟 Featured AI Films</h2>
     <div class="poster-grid">
@@ -152,7 +174,20 @@
     </div>
   </div>
 
-  <div class="section" id="features" style="background-color:#1a1a1a;">
+  <div class="ads-inline">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="2222222222"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <div class="section" id="features">
     <h2>🧠 AI Tools Behind the Scenes</h2>
     <div class="feature-grid">
       <div class="feature">
@@ -174,6 +209,19 @@
     </div>
   </div>
 
+  <div class="ads-inline">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="3333333333"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <div class="section" id="ads">
     <h2>📺 Sample AI TV Ads</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/72IBFhbkT_Y" title="AI Ad Demo" frameborder="0" allowfullscreen></iframe>
@@ -185,7 +233,7 @@
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="1234567890"
+         data-ad-slot="4444444444"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
