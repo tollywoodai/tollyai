@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf7;
+  color: #2c2c2c;
+}
+.site-header {
+  background-color: #e9ddd1;
+  padding: 40px;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.post {
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+.post:hover {
+  transform: translateY(-5px);
+}
+.post img {
+  width: 100%;
+  border-radius: 8px;
+}
+.latest-news, .reddit-feed, .call-to-action {
+  padding: 40px 20px;
+  text-align: center;
+}
+.call-to-action {
+  background: #e9ddd1;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee0d2;
+}
+input[type="email"] {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+}
+button {
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

@@ -1,56 +1,25 @@
----
-layout: default
-title: TollywoodAI
----
+# TollywoodAI Website
 
-# 🎬 Welcome to TollywoodAI.com
+This is the enhanced static website for [TollywoodAI.com](https://tollywoodai.com), featuring:
+- AI-generated Tollywood insights
+- Responsive blog-style layout
+- Embedded Reddit highlights
+- Newsletter subscription form (static placeholder)
 
-Where **AI meets Telugu cinema** — powering the future of movies, trailers, and TV ads!
+## How to Deploy
 
----
+1. Clone this repo or upload the contents manually to your GitHub repository `tollyai`.
+2. Enable GitHub Pages:
+   - Go to **Settings > Pages**
+   - Set source to `main` branch and root (`/`)
+3. Visit: `https://yourusername.github.io/tollyai/` to see it live.
 
-![Hero Banner](https://via.placeholder.com/1200x400?text=TollywoodAI+Header+Banner)
+## Customization
 
-## 🧠 Featured AI Movie of the Day
-
-**"Andhra 2049"**  
-> A dystopian Telugu sci-fi film generated entirely by AI — script, visuals, and voice.
-
-![Movie Poster](https://via.placeholder.com/400x600?text=Andhra+2049+Poster)
-
-🎙️ Voice by: AI-generated Prabhas  
-🎵 Music styled after A.R. Rahman using AI  
-🎥 Trailer drops soon...
+- Replace placeholder images in `/assets/` with your Canva or AI-generated images.
+- Edit `index.html` to add more posts or sections.
+- Update `styles.css` for color, fonts, layout changes.
 
 ---
 
-## 📺 TV Ad Showcase
-
-Watch how AI can make 15-second product ads in Telugu for:
-- Small businesses
-- Local services
-- Political campaigns
-
-![TV Ad Sample](https://via.placeholder.com/800x400?text=Sample+TV+Ad)
-
----
-
-## 🔧 How It Works
-
-We use AI tools like:
-- ChatGPT for story ideas
-- DALL·E & Midjourney for posters
-- ElevenLabs for Telugu voice cloning
-- RunwayML for text-to-video
-
----
-
-## 📬 Want to Feature Your AI Project?
-
-Send us your AI-generated ad or film idea and we’ll feature it on the homepage.
-
-[Submit Your Project](mailto:your@email.com)
-
----
-
-> *Powered by GPT, styled by Tollywood.*
+Built with ❤️ for the Tollywood community.
