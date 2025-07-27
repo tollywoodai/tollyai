@@ -117,3 +117,28 @@ footer p { margin: 0; }
 [data-aos].aos-animate {
   opacity: 1;
 }
+
+.movie-grid, .tv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+.movie-card, .tv-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  background: #fff;
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.news-feed {
+  padding: 1em;
+  list-style: none;
+}
+.news-feed li {
+  margin-bottom: 0.5em;
+}
