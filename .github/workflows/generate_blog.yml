@@ -1,8 +1,8 @@
-name: Weekly AI Blog Post
+name: Weekly AI Blog Post with Blog Index
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
   workflow_dispatch:
 
 jobs:
@@ -19,18 +19,21 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install openai
+        run: pip install openai markdown
 
       - name: Generate blog post
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python generate_blog_post.py
+        run: |
+          python generate_blog_post.py
+          cd blog && python render_blog_posts.py
+          cd ..
+          python generate_blog_index.py
 
-      - name: Commit blog post
+      - name: Commit updates
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add blog_*.md
-          git commit -m "🤖 Weekly AI blog post" || echo "No changes to commit"
+          git add blog/*.md blog/*.html blog/index.html
+          git commit -m "🤖 Weekly blog post + updated index" || echo "No changes"
           git push
-          
