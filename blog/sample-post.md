@@ -1,4 +1,4 @@
-# Welcome to the Tollywood AI Blog
+# Welcome to the Tollywood AI Blog.
 
 This is a sample AI-generated blog post. Future posts will be generated automatically each week using OpenAI's GPT-4.
 
