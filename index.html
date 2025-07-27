@@ -8,6 +8,8 @@
   <meta property="og:title" content="Tollywood AI – AI‑Driven Telugu Cinema Insights">
   <meta property="og:image" content="assets/og-image.png">
   <link rel="stylesheet" href="styles.css" />
+
+  <script defer data-domain="tollywoodai.com" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
   <nav class="site-nav">
@@ -19,10 +21,22 @@
       <li><a href="#blog">Blog</a></li>
     </ul>
   </nav>
-  <header class="site-header">
-    <h1>Tollywood AI</h1>
-    <p>AI-powered Tollywood News & Insights</p>
-  </header>
+  
+<header class="site-header">
+  <h1><a href="/">TollywoodAI</a></h1>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/pages/movies.html">Movies</a></li>
+      <li><a href="/pages/tv.html">TV Shows</a></li>
+      <li><a href="/blog/index.html">Blog</a></li>
+      <li><a href="/pages/insights.html">AI Insights</a></li>
+      <li><a href="/pages/news.html">News</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <section class="hero">
     <img src="assets/hero.png" alt="Tollywood AI Banner" />
@@ -92,5 +106,12 @@
     bot.innerHTML = '<div style="position:fixed;bottom:20px;right:20px;background:#333;color:#fff;padding:10px 15px;border-radius:10px;">💬 Chat (Coming Soon)</div>';
     document.body.appendChild(bot);
   </script>
+
+  <section class="trailers" data-aos="fade-up">
+    <h3>🎞️ Trailers</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/yoVYqF_LUtk" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <script src="/scripts/darkmode.js"></script>
 </body>
 </html>
