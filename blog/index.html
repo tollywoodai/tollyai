@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog – Tollywood AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Tollywood AI Blog</h1>
+    <p>Latest AI-generated insights on Tollywood movies and stars.</p>
+  </header>
+
+  <section class="posts" id="blog-posts">
+    <p>Loading posts...</p>
+  </section>
+
+  <footer>
+    <p>© 2025 TollywoodAI. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simulated post data (in a real scenario, this would be pulled from JSON or API)
+    const posts = [
+      {
+        title: "AI Predictions for Pushpa 2 Box Office",
+        date: "2025-07-27",
+        file: "blog_2025-07-27_AI_predictions_for_Pushpa.md"
+      },
+      {
+        title: "How AI is Changing Tollywood Movie Marketing",
+        date: "2025-07-20",
+        file: "blog_2025-07-20_AI_and_Movie_Marketing.md"
+      }
+    ];
+
+    const container = document.getElementById('blog-posts');
+    container.innerHTML = posts.map(post => `
+      <article class="post">
+        <h2>${post.title}</h2>
+        <p><em>${post.date}</em></p>
+        <p><a href="../blog/${post.file}" target="_blank">Read post</a></p>
+      </article>
+    `).join("");
+  </script>
+</body>
+</html>
