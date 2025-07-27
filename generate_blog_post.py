@@ -10,7 +10,7 @@ def generate_blog_post(prompt, tags):
     print(f"Generating blog post for: {prompt}")
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a Tollywood movie blogger who writes insightful and engaging articles."},
             {"role": "user", "content": f"Write a blog post about: {prompt}"}
