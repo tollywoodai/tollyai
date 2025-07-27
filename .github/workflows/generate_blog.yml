@@ -1,0 +1,35 @@
+name: Weekly AI Blog Post
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
+  workflow_dispatch:
+
+jobs:
+  generate-blog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install openai
+
+      - name: Generate blog post
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python generate_blog_post.py
+
+      - name: Commit blog post
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add blog_*.md
+          git commit -m "🤖 Weekly AI blog post" || echo "No changes to commit"
+          git push
